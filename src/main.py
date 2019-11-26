@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 def get_zone():
     host = 'metadata.google.internal'
-    path = '/computeMetadata/v1/instance/zone'
+    path = 'computeMetadata/v1/instance/zone'
     url = f'{host}/{path}'
     headers = {'Metadata-Flavor': 'Google'}
     r = requests.get(url=url, headers=headers)
