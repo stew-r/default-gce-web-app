@@ -46,17 +46,17 @@ docker images
 Tag the image:
 
 ```bash
-docker tag <image_id> stewblr/gce-demo-web-app-image:<version>
+docker tag <image_id> stewblr/gce-demo-web-app-image:latest
 ```
 
 Push the image:
 
 ```bash
-docker push stewblr/gce-demo-web-app-image:<version>
+docker push stewblr/gce-demo-web-app-image:latest
 ```
 
 ## Create a GCE VM instance from the image
 
 Follow [these instructions](https://cloud.google.com/compute/docs/containers/deploying-containers#deploying_a_container_on_a_new_vm_instance)
-and, under Container image, specify `registry.hub.docker.com/stewblr/gce-demo-web-app-image
+and, under Container image, specify `registry.hub.docker.com/stewblr/gce-demo-web-app-image:latest
 `.
