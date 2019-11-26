@@ -18,7 +18,6 @@ def get_zone():
 
 @app.route('/')
 def hello_world():
-    app.logger.info('this is an INFO message')
     try:
         return get_zone()
     except Exception as e:
