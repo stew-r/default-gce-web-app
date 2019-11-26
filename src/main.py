@@ -13,7 +13,7 @@ def get_zone():
     headers = {'Metadata-Flavor': 'Google'}
     r = requests.get(url=url, headers=headers)
     zone = r.text.split('/')[-1]
-    return r.text
+    return zone
 
 
 @app.route('/')
