@@ -29,7 +29,7 @@ Send a request to the app:
 curl localhost:80
 ```
 
-## Update and host image on Docker Hub
+## Build and the host image on Docker Hub
 
 Build the image:
 
@@ -54,3 +54,9 @@ Push the image:
 ```bash
 docker push stewblr/gce-demo-web-app-image:<version>
 ```
+
+## Create a GCE VM instance from the image
+
+Follow [these instructions](https://cloud.google.com/compute/docs/containers/deploying-containers#deploying_a_container_on_a_new_vm_instance)
+and, under Container image, specify `registry.hub.docker.com/stewblr/gce-demo-web-app-image
+`.
